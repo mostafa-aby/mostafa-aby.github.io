@@ -164,20 +164,28 @@ Talks live in their own `presentations` list, kept out of the paper list:
 `talkSections` names those two sections the same way `pubSections` does. The
 list is empty right now, so neither section prints.
 
-## The site is three kinds of page
+## The site is one page
 
 | Page | Answers | Built from |
 |---|---|---|
-| `/` | "Who is this and is he any good?" — 30 seconds | `homeSections()` |
-| `/cv/` | "Give me the complete record." | `cvSections()` |
+| `/` | everything — the CV itself | `homeSections()` |
+| `/cv/` | *redirect only.* Sends you to `/`, `noindex`, canonical to `/` | hard-coded stub in `build.js` |
 | `/pub/<slug>/` | one paper, its abstract, where to read it | any publication with an `abstract` |
 
-The homepage is a funnel: masthead → Selected Research → Publications →
-Conference Papers → Code → News → Education → Experience (compact) → a link to
-`/cv/`. News sits below the papers deliberately — dated one-liners are the
-weakest content on the page and should not be the first thing a stranger reads.
-Experience on the homepage shows roles and dates only; the bullets are on
-`/cv/`, driven by the same data and the same renderer.
+There used to be a separate `/cv/` page, and a "Selected Research" block that
+pitched the work. Both are gone. A visitor met three ways to reach roughly the
+same content — a `CV (PDF)` button, a `CV` link, and a `Full CV →` chip — and
+had to guess which one they wanted. Now the page **is** the CV, in CV order, and
+the PDF sits in the link row for anyone who wants to print or attach it.
+
+`/cv/` stays as a redirect rather than a 404 because that URL was submitted to
+Google Search Console and may be bookmarked. It is `noindex` and canonicals to
+`/`, so the two get merged in the index instead of competing, and it is kept out
+of `sitemap.xml`.
+
+The `research` array in `data.js` is now unused — it fed the deleted Selected
+Research block. It is left in place, written and ready, in case you want that
+section back.
 
 ## Page order and the jump nav
 

@@ -6,36 +6,24 @@ My personal academic website. Plain HTML — nothing to install.
 
 ---
 
-## First-time setup (do this once)
+## Setup — already done
 
-The site isn't online until three things exist. In order:
+This folder is a git repo, wired to
+[github.com/mostafa-aby/mostafa-aby.github.io](https://github.com/mostafa-aby/mostafa-aby.github.io),
+with Pages serving `main` at the root. You don't need to do any of that again.
 
-1. **Create the GitHub repo.** It must be named exactly
-   `mostafa-aby.github.io` — GitHub Pages only serves a user site from a
-   repo named after the account. Public, because Pages only serves public repos
-   on the free plan.
+Two things about the git config here, so they don't surprise you:
 
-2. **Push this folder into it:**
+- **Commits use a repo-local identity.** Your *global* git name is
+  `WalterMitty-0`; this repo overrides it with `Mostafa Jafarian Abyaneh` and
+  your GitHub noreply address, so the public commit history carries your real
+  name and not your personal Gmail. Check it any time with
+  `git config user.name`.
+- **`../cv-typst` and `../resume-typst` are not repos.** That's optional —
+  `publish.sh` pushes whichever of the three *is* a repo and skips the rest. Run
+  `git init` in them if you want the PDFs to have their own history.
 
-   ```powershell
-   cd "G:\My Drive\Mostafa's Documents\CV & Resume\CV and Resume\website"
-   git init
-   git add -A
-   git commit -m "Initial site"
-   git branch -M main
-   git remote add origin https://github.com/mostafa-aby/mostafa-aby.github.io.git
-   git push -u origin main
-   ```
-
-   Then **Settings → Pages → Source: Deploy from a branch → main / (root)**.
-   Live in about a minute.
-
-3. **Optional, same pattern:** `git init` inside `../cv-typst` and
-   `../resume-typst` too, each with its own repo. `publish.sh` pushes any of the
-   three that is a repo and skips the ones that aren't, so this is genuinely
-   optional — it just gives the PDFs their own version history.
-
-### Then, once it's live
+### Still worth doing
 
 | Task | Where |
 |---|---|

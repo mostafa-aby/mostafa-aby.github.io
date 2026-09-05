@@ -20,9 +20,12 @@ Two things about the git config here, so they don't surprise you:
   of this repo, which is the tradeoff for using a real address rather than
   GitHub's noreply alias. This repo sets no override of its own — check with
   `git config user.email`.
-- **`../cv-typst` and `../resume-typst` are not repos.** That's optional —
-  `publish.sh` pushes whichever of the three *is* a repo and skips the rest. Run
-  `git init` in them if you want the PDFs to have their own history.
+- **This is the PUBLIC repo; the Typst sources live in a private one.** The
+  parent folder is its own repository, private, holding `cv-typst/`,
+  `resume-typst/` and `publish.sh`. It lists `website/` in its `.gitignore`, so
+  the two can never swallow each other. Only the compiled PDFs cross over, and
+  only because `publish.sh` copies them in. Your `.typ` sources have never been
+  published here — verified across every revision.
 
 ### Still worth doing
 

@@ -483,7 +483,17 @@ function personJsonLd() {
       "@context": "https://schema.org",
       "@type": "Person",
       name: D.profile.name,
-      alternateName: ["Mostafa Jafarian Abyaneh", "M. Jafarian Abyaneh", "M. J. Abyaneh"],
+      // Your papers are indexed under several forms of your name, and there are
+      // other researchers called Mostafa Jafarian. Listing every form you
+      // actually publish under is how a search engine merges them into one
+      // person instead of scattering them across several.
+      alternateName: [
+        "Mostafa Jafarian Abyaneh",
+        "M. Jafarian Abyaneh",
+        "Mostafa J. Abyaneh",
+        "M. J. Abyaneh",
+        "Mostafa Jafarian",
+      ],
       url: SITE_URL + "/",
       image: SITE_URL + "/" + D.profile.image,
       jobTitle: D.profile.title,
@@ -600,7 +610,7 @@ const homeDescription = collapse(D.profile.bio).slice(0, 300);
 fs.writeFileSync(
   path.join(__dirname, "index.html"),
   page({
-    title: `${D.profile.name} — ${D.profile.title}`,
+    title: `${D.profile.name} — ${D.profile.title}${D.profile.affiliation ? ", " + D.profile.affiliation : ""}`,
     description: homeDescription,
     canonical: SITE_URL + "/",
     base: "",
@@ -630,7 +640,7 @@ fs.mkdirSync(cvDir, { recursive: true });
 fs.writeFileSync(
   path.join(cvDir, "index.html"),
   page({
-    title: `CV — ${D.profile.name}`,
+    title: `CV — ${D.profile.name}, ${D.profile.affiliation || D.profile.title}`,
     description: `Full curriculum vitae of ${D.profile.name}: education, research experience, publications, conference papers, certifications, awards and technical skills.`,
     canonical: SITE_URL + "/cv/",
     base: "../",

@@ -37,9 +37,19 @@ const links = [
   { name: "Scholar",  url: "https://scholar.google.com/citations?user=bxRWCD4AAAAJ&hl=en" },
   { name: "GitHub",   url: "https://github.com/mostafa-aby" },
   { name: "LinkedIn", url: "https://linkedin.com/in/mostafa-aby" },
-  // The CV link goes to the web page; the PDF is linked from the top of it.
-  { name: "CV",       url: "cv/" },
-  { name: "Resume",   url: "assets/resume.pdf" },
+  // ONE document, and clicking it gives you that document. A recruiter clicking
+  // "CV" wants the file to read, print or attach — not a web page they then have
+  // to find a download button on. The web version of the CV is still there and
+  // still indexed; it is reached from "Full CV" in the nav row and from the link
+  // at the bottom of the page, where someone browsing will look for it.
+  //
+  // "Resume" used to sit here too. Two links a recruiter reads as synonyms is a
+  // decision you are making them make. The resume is also tailored per
+  // application, so publishing one fixed version helps nobody — attach the right
+  // one to the application instead. To put it back:
+  //   { name: "Resume", url: "assets/resume.pdf" },
+  // and restore the copy_if_diff line for resume.pdf in publish.sh.
+  { name: "CV (PDF)", url: "assets/cv.pdf" },
 ];
 
 const interests = [

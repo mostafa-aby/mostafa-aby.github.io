@@ -221,13 +221,20 @@ bash publish.sh "Add the Maryland advisor"
 | `--dry` | show what it would do, change nothing |
 | `--check` | also test every link (slower, needs network) |
 
-To switch which resume the site serves, edit `SITE_RESUME` at the top of
-`publish.sh`. There are two tracks:
+**The resume is not published.** The site offers one document — the CV, as a
+PDF — because a recruiter clicking "CV" wants the file, and two links they read
+as synonyms only makes them choose. The two resume tracks
+(`resume-typst_Simulation_FEA.typ` for FEA/simulation roles,
+`resume-typst_ML_Data.typ` for ML/data roles) stay in the private repo and get
+attached to applications directly, which is also the only way the right track
+reaches the right employer.
 
-| File | For |
-|---|---|
-| `resume-typst_Simulation_FEA.pdf` | FEA / simulation / R&D engineer roles |
-| `resume-typst_ML_Data.pdf` | ML / data science roles |
+To publish one anyway: uncomment the `resume.pdf` line in `publish.sh`, point
+`SITE_RESUME` at the track you want, and add back to `links` in `data.js`:
+
+```js
+{ name: "Resume", url: "assets/resume.pdf" },
+```
 
 ---
 

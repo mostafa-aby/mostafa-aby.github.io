@@ -86,6 +86,7 @@ const publications = [
     status: "published",
     links: [
       { label: "DOI", url: "https://doi.org/10.1061/(ASCE)GM.1943-5622.0001725" },
+      { label: "Full text (DalSpace)", url: "https://hdl.handle.net/10222/79694" },
       { label: "Scholar", url: "https://scholar.google.com/citations?user=bxRWCD4AAAAJ&hl=en" },
     ],
     // Paywalled at ASCE, so no abstract is reproduced here. If you want a
@@ -151,8 +152,7 @@ const publications = [
     // Google Scholar dates the deposit 2019; the degree completed in 2020.
     venues: ["Master's thesis, Dalhousie University — 2019"],
     status: "published",
-    // DalSpace hosts Dalhousie theses. Find yours and link it here.
-    links: [],
+    links: [{ label: "Full text (DalSpace)", url: "https://hdl.handle.net/10222/76578" }],
     abstract: null,
   },
   {
@@ -162,7 +162,7 @@ const publications = [
     authors: "<strong>M. Jafarian Abyaneh</strong>, H. El Naggar, P. Sadeghian",
     venues: ["CSCE Annual Conference, Fredericton, NB, Canada — 2018"],
     status: "published",
-    links: [],
+    links: [{ label: "Full text (DalSpace)", url: "https://hdl.handle.net/10222/74111" }],
     abstract: null,
   },
   {
@@ -172,7 +172,7 @@ const publications = [
     authors: "<strong>M. Jafarian Abyaneh</strong>, P. Sadeghian, H. El Naggar",
     venues: ["10th Int. Conference on Short and Medium Span Bridges (SMSB), CSCE, Quebec City, QC — 2018"],
     status: "published",
-    links: [],
+    links: [{ label: "Full text (DalSpace)", url: "https://hdl.handle.net/10222/74116" }],
     abstract: null,
   },
   {
@@ -182,7 +182,7 @@ const publications = [
     authors: "<strong>M. Jafarian Abyaneh</strong>, H. El Naggar, P. Sadeghian",
     venues: ["GeoOttawa, Ottawa, ON, Canada — 2017"],
     status: "published",
-    links: [],
+    links: [{ label: "Full text (DalSpace)", url: "https://hdl.handle.net/10222/73400" }],
     abstract: null,
   },
 ];

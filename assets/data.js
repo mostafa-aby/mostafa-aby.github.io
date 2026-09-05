@@ -10,6 +10,10 @@ const profile = {
   // Shown beside the title and handed to search engines. Someone reading a
   // search result wants to know where you are before almost anything else.
   location: "College Park, Maryland",
+  // Goes into the <title> of every page. Your name alone loses to several other
+  // Mostafa Jafarians with older, better-linked pages; the institution is the
+  // word that tells a search engine (and a human) which one you are.
+  affiliation: "University of Maryland",
   image: "assets/profile.jpg",
   bio: `I am a PhD student in <strong>Civil Engineering</strong> at the
         <strong>University of Maryland, College Park</strong>, working with

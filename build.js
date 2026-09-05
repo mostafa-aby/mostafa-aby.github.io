@@ -653,7 +653,8 @@ fs.writeFileSync(
       <h1>Curriculum Vitae</h1>
       <p class="muted">${D.profile.title}${
         D.profile.location ? " &middot; " + D.profile.location : ""
-      } &middot; <a href="../assets/cv.pdf">Download as PDF</a></p>
+      }</p>
+      <p class="cta"><a href="../assets/cv.pdf">&darr; Download this CV as a PDF</a></p>
     </header>`;
       return [head, sectionNav(sections), ...sections.map(sectionHtml), footer()].join("\n");
     })(),

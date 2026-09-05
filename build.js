@@ -36,7 +36,7 @@ const ORCID = "";
    Paste ONLY the XXXX part below, rebuild, push, then click Verify.
    Bing Webmaster Tools works the same way (or just import from Google).
    Leave them empty until then; the tags are simply omitted. */
-const GOOGLE_SITE_VERIFICATION = "";
+const GOOGLE_SITE_VERIFICATION = "9kJ1f3rlbHIawG54Ox-4wJyTbSjuPdr8UbL9Itcdh6A";
 const BING_SITE_VERIFICATION = "";
 
 /* ---- Cache busting ----------------------------------------

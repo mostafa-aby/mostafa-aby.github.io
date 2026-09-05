@@ -14,11 +14,11 @@ with Pages serving `main` at the root. You don't need to do any of that again.
 
 Two things about the git config here, so they don't surprise you:
 
-- **Commits use a repo-local identity.** Your *global* git name is
-  `WalterMitty-0`; this repo overrides it with `Mostafa Jafarian Abyaneh` and
-  your GitHub noreply address, so the public commit history carries your real
-  name and not your personal Gmail. Check it any time with
-  `git config user.name`.
+- **Commits use your global identity**, which is `mostafa-aby` with the address
+  `103391845+mostafa-aby@users.noreply.github.com`. That noreply address is
+  verified on your GitHub account, so commits link to you properly, but your
+  personal Gmail never appears in a public commit. This repo sets no override of
+  its own — check with `git config user.name`.
 - **`../cv-typst` and `../resume-typst` are not repos.** That's optional —
   `publish.sh` pushes whichever of the three *is* a repo and skips the rest. Run
   `git init` in them if you want the PDFs to have their own history.

@@ -31,11 +31,9 @@ const profile = {
         in the Structural Engineering Laboratory.`,
   research: `My work is in <strong>computational solid mechanics</strong>: building
         constitutive models for composite, brittle and soft materials, and running
-        nonlinear finite element simulations of how they fail. What interests me
-        most is <strong>data-driven constitutive modeling</strong> &mdash; using
-        machine learning to identify how a material behaves directly from
-        experimental and simulation data, instead of assuming an equation and
-        fitting its constants.`,
+        nonlinear finite element simulations of how they fail. I apply
+        <strong>machine learning</strong>, including deep neural networks, to
+        predict material behavior from experimental and simulation data.`,
 };
 
 const links = [
@@ -293,17 +291,17 @@ const research = [
     ],
   },
   {
-    id: "cfrp-rve-bayesian",
+    id: "cfrp-rve-composites",
     // HIDDEN until this work is published. Delete this one line then;
     // everything else is ready to go.
     hidden: true,
-    title: "Randomized composite microstructures, sampled by Bayesian optimization",
+    title: "Randomized composite microstructures under damage",
     status: "prep",
     hook: "A carbon-fibre composite is never twice the same at the fibre scale. A model that ignores that predicts a part that does not exist.",
     points: [
       "Finite element simulation of the elastic–plastic response of randomized <strong>CFRP representative volume elements</strong>, including damage initiation and evolution.",
       "A Python pipeline generates geometry, mesh, and stochastic parameter sets, so hundreds of realizations run as one batch.",
-      "<strong>Bayesian optimization</strong> chooses which realizations to run, covering the property space with far fewer simulations.",
+      "<strong>Statistical sampling</strong> selects which realizations to run, covering the property space with far fewer simulations.",
     ],
     links: [],
   },
@@ -333,8 +331,7 @@ const experience = [
     points: [
       "Simulated the elastic–plastic response of randomized <strong>CFRP composite RVEs</strong> in Abaqus, resolving damage initiation and evolution.",
       "Automated the FE workflow in <strong>Python</strong> — geometry, meshing, stochastic parameter randomization — so many configurations run as one batch.",
-      "Applied <strong>Bayesian optimization</strong> to the material randomization scheme, improving how well realizations span the property space.",
-      "Built molecular dynamics capability in LAMMPS for subsequent multiscale materials work.",
+      "Applied <strong>statistical sampling methods</strong> to the material randomization scheme, improving how well realizations span the property space.",
     ],
   },
   {

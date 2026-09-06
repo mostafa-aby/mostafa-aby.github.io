@@ -40,6 +40,10 @@ const profile = {
   // restates the interest tags above or reads as a slogan; the bullets say what
   // the work is without help.
   research: ``,
+  // "Current research", not "Research": the Research Interests tags sit a little
+  // further down and name the fields. This names the work actually underway, so
+  // the two headings do not read as the same thing said twice.
+  researchTitle: `Current research`,
   researchPoints: [
     // Label then specifics, the same construction as the Technical Skills block.
     // The label carries the activity, so the text after the colon never repeats

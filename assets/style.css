@@ -73,10 +73,15 @@ body {
 
 .abstract p,
 .entry ul li,
-section > ul:not(.pubs):not(.news):not(.repos) li,
-.skill-row {
+section > ul:not(.pubs):not(.news):not(.repos) li {
   max-width: var(--measure);
 }
+
+/* A skills row is NOT prose. It is a labelled, comma-separated list that gets
+   scanned, not read line by line, so the 65–75 character rule does not apply —
+   and capping it made lines wrap in the middle with half the column standing
+   empty beside them. It runs the full width like the headings above it. */
+.skill-row { max-width: none; }
 
 /* ---------- Typography ---------- */
 a { color: var(--link); text-decoration: none; }

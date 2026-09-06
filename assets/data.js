@@ -424,8 +424,10 @@ const skills = [
   { group: "Programming", items: "Python, MATLAB, SQL, LaTeX, Typst, Git" },
   { group: "Finite Element Packages", items: "Abaqus, Ansys Mechanical, PLAXIS 3D, SAP2000, ETABS" },
   { group: "Computer-Aided Design", items: "SolidWorks, Ansys SpaceClaim, AutoCAD" },
-  { group: "Molecular Dynamics", items: "LAMMPS" },
-  { group: "Machine Learning &amp; Data", items: "PyTorch, TensorFlow, Keras, Scikit-learn, Pandas, NumPy, SciPy, Bayesian Optimization" },
+  // No "Molecular Dynamics" group and no "Bayesian Optimization": both were
+  // retired from the skills list. They still appear in Experience, where they
+  // describe work actually done rather than a capability being advertised.
+  { group: "Machine Learning &amp; Data", items: "PyTorch, TensorFlow, Keras, Scikit-learn, Pandas, NumPy, SciPy" },
   // No "Methods" group: this section lists tools, and methods are what the
   // Experience and Publications sections already show. Kept out of all three
   // documents deliberately — see check-consistency.py.

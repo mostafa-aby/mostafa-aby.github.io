@@ -427,22 +427,39 @@ function collect(fn) {
 
    News is last on purpose: it is the only thing here that is not CV content.
    Delete its line if you would rather not have it at all. */
+/* EVIDENCE FIRST. Publications lead because they are the rarest thing here:
+   nine of them, two first-author ASCE journal articles, in the first year of a
+   PhD. Most people at this stage have none.
+
+   Education sits BELOW the record on purpose. Listing five institutions before
+   a reader knows anything else invites "why so many places?"; reaching it after
+   the papers answers that question before it forms — he published at Sharif, at
+   Dalhousie, and since. Same facts, opposite reading.
+
+   Research Interests dropped below Experience because the masthead's research
+   paragraph already says the same thing about 100px higher up. */
 const homeSections = (base) =>
   collect((add) => {
-    add("education", "Education", education());
-    add("interests", "Research Interests", interests(), "Interests");
-    add("experience", "Experience", experience(false));
-    add("teaching", "Teaching", teaching());
     D.pubSections.forEach((g) => add(slugId(g.short), g.title, pubList(g.key, base), g.short));
     D.talkSections.forEach((g) => add(slugId(g.short), g.title, talkList(g.key), g.short));
+    add("experience", "Experience", experience(false));
+    add("teaching", "Teaching", teaching());
+    add("interests", "Research Interests", interests(), "Interests");
+    add("education", "Education", education());
     add("funding", "Research Funding", list(D.funding), "Funding");
     add("mentoring", "Mentoring", mentoring());
     add("awards", "Honors and Awards", list(D.awards), "Awards");
+    add("code", "Code", codeList(base));
+    // Skills before Certifications: six MOOCs should not outrank the tools.
+    add("skills", "Technical Skills", skills(), "Skills");
     add("certifications", "Certifications", certifications(), "Certifications");
     add("affiliations", "Professional Affiliations", list(D.affiliations), "Affiliations");
-    add("code", "Code", codeList(base));
-    add("skills", "Technical Skills", skills(), "Skills");
-    add("test-scores", "Test Scores", list(D.testScores), "Test Scores");
+    // Test Scores removed: he is already admitted, so the GRE can no longer
+    // help him, and publishing Analytical Writing 3.0 on a page whose job is to
+    // show he writes research papers argues against him. The two ASCE articles
+    // are the writing evidence. Restore by re-adding this line and refilling
+    // `testScores` in data.js:
+    //   add("test-scores", "Test Scores", list(D.testScores), "Test Scores");
     add("news", "News", news());
   });
 

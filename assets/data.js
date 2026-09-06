@@ -30,10 +30,12 @@ const profile = {
         <a href="https://cee.umd.edu/clark/faculty/303/Yunfeng-Zhang" target="_blank" rel="noopener">Prof. Yunfeng Zhang</a>
         in the Structural Engineering Laboratory.`,
   research: `My work is in <strong>computational solid mechanics</strong>: building
-        constitutive models for composite, brittle and soft materials, running
-        nonlinear finite element simulations of how they fail, and using
-        <strong>machine learning and Bayesian optimization</strong> to calibrate
-        those models against experimental data.`,
+        constitutive models for composite, brittle and soft materials, and running
+        nonlinear finite element simulations of how they fail. What interests me
+        most is <strong>data-driven constitutive modeling</strong> &mdash; using
+        machine learning to identify how a material behaves directly from
+        experimental and simulation data, instead of assuming an equation and
+        fitting its constants.`,
 };
 
 const links = [
@@ -419,9 +421,9 @@ const certifications = [
 /* Standardised test scores. On the CV page only, never the homepage.
    Delete the entry (leave the array empty) once you are past the point where
    anyone asks — for a postdoc or an industry role, nobody does. */
-const testScores = [
-  "<strong>GRE General</strong> (Aug. 2022) — Total 314: Verbal 152, Quantitative 162, Analytical Writing 3.0",
-];
+/* Emptied 2026-09-06. Restore by pasting the entry back:
+   "<strong>GRE General</strong> (Aug. 2022) — Total 314: Verbal 152, Quantitative 162, Analytical Writing 3.0" */
+const testScores = [];
 
 const skills = [
   { group: "Programming", items: "Python, MATLAB, SQL, LaTeX, Typst, Git" },

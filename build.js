@@ -425,8 +425,9 @@ function collect(fn) {
    serves anyone who just wants the document. So the record lives here, in CV
    order, and the PDF is one click away for anyone who wants to print it.
 
-   News is last on purpose: it is the only thing here that is not CV content.
-   Delete its line if you would rather not have it at all. */
+   News is the only thing here that is not CV content. It now sits second, as a
+   recency signal right after the interest tags. Delete its line if you would
+   rather not have it at all. */
 /* EVIDENCE FIRST. Publications lead because they are the rarest thing here:
    nine of them, two first-author ASCE journal articles, in the first year of a
    PhD. Most people at this stage have none.
@@ -445,6 +446,12 @@ function collect(fn) {
 const homeSections = (base) =>
   collect((add) => {
     add("interests", "Research Interests", interests(), "Interests");
+    // News second: the tags say what he does, News shows he is doing it now.
+    // It sits ABOVE Publications knowing two of its entries name the same two
+    // ASCE papers listed just below. That repetition is the price of putting a
+    // dated, current signal near the top; move this line back to the end of the
+    // list if the duplication starts to read as padding.
+    add("news", "News", news());
     D.pubSections.forEach((g) => add(slugId(g.short), g.title, pubList(g.key, base), g.short));
     D.talkSections.forEach((g) => add(slugId(g.short), g.title, talkList(g.key), g.short));
     add("experience", "Experience", experience(false));
@@ -464,7 +471,6 @@ const homeSections = (base) =>
     // are the writing evidence. Restore by re-adding this line and refilling
     // `testScores` in data.js:
     //   add("test-scores", "Test Scores", list(D.testScores), "Test Scores");
-    add("news", "News", news());
   });
 
 

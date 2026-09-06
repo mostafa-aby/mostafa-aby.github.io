@@ -125,12 +125,13 @@ header.masthead .identity { flex: 1 1 300px; }
 
 /* The bio is prose and obeys the prose rule, a little wider than the body
    measure because it sits beside the photo rather than under a heading. Left
-   uncapped it would run the ~87 characters the wider column allows.
+   uncapped it would run the ~87 characters the wider column allows. Widened
+   from 36rem to 38rem so the longest masthead bullet holds one line.
    The two paragraphs get roughly double the page's default gap, and a little
    extra leading: this is the block every visitor reads first, and air between
    the lines is what keeps it from reading as a wall. */
 header.masthead .identity p {
-  max-width: 36rem;
+  max-width: 38rem;
   margin: .85rem 0;
   line-height: 1.62;
 }
@@ -139,7 +140,7 @@ header.masthead .identity p {
    above them. Tightening a list because "it is only bullets" is how the top of
    a page turns back into the wall the paragraph rule above just prevented. */
 header.masthead .identity ul.lede-points {
-  max-width: 36rem;
+  max-width: 38rem;
   margin: .85rem 0;
   padding-left: 1.15rem;
   line-height: 1.62;

@@ -108,7 +108,10 @@ header.masthead img.avatar {
   width: 280px;
   height: 420px;         /* 2:3, the source photo's own ratio */
   object-fit: cover;
-  object-position: 50% 22%;
+  /* The source is composed at 2:3 and the box is 2:3, so cover shows the whole
+     frame and centre is centre. The old 22% existed only to pull a badly
+     framed photo up; it would now crop the top of the head. */
+  object-position: 50% 50%;
   border-radius: 8px;
   flex-shrink: 0;
 }

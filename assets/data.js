@@ -422,8 +422,12 @@ const affiliations = [];
 
 /* Professional certifications, newest first. */
 const certifications = [
-  { name: "Complete TensorFlow 2 and Keras Deep Learning Bootcamp", issuer: "Udemy", date: "Aug. 2022" },
-  { name: "Python for Machine Learning &amp; Data Science Masterclass", issuer: "Udemy", date: "Jun. 2022" },
+  // Two Udemy certificates removed 2026-09-06. Not because either course was
+  // bad, but because six certificates read as "his ML came from short courses"
+  // while four, all from names a reader recognizes, read as training behind
+  // real research. Udemy went first: no institutional filter on who publishes
+  // there, so it discounts the list it sits in. TensorFlow and Keras are still
+  // named in Technical Skills, so no keyword was lost.
   { name: "Improving Deep Neural Networks", issuer: "DeepLearning.AI on Coursera", date: "Apr. 2021" },
   { name: "Neural Networks and Deep Learning", issuer: "DeepLearning.AI on Coursera", date: "Apr. 2021" },
   { name: "Machine Learning", issuer: "Stanford University on Coursera", date: "Apr. 2021" },

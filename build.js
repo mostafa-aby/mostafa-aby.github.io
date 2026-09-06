@@ -582,7 +582,15 @@ ${
     <meta name="twitter:description" content="${attr(description)}" />
     <meta name="twitter:image" content="${SITE_URL}/${D.profile.image}" />
 
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>" />
+    <!-- Favicon. Was an emoji data-URI (🏗️), which drew differently on every
+         operating system, said "construction site" rather than computational
+         mechanics, and left /favicon.ico returning 404. Now a real icon set:
+         an M in the site's accent blue, as a PATH so no font is needed, plus
+         .ico for browsers and crawlers that still ask for it by that name.
+         Root-absolute paths: this is a user site served at the domain root. -->
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="stylesheet" href="${base}assets/style.css?v=${CSS_V}" />
 
     <script type="application/ld+json">

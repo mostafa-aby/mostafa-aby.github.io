@@ -74,7 +74,6 @@ const interests = [
   "Computational Solid Mechanics",
   "Nonlinear Finite Element Analysis",
   "Constitutive Modeling of Materials",
-  "Composite &amp; Damage Mechanics",
   // Two tags, not one: the first is the keyword an AI/ML reader scans for and
   // will not find inside a domain-qualified phrase; the second keeps the claim
   // anchored to work he can actually evidence. Dropping the second would leave a

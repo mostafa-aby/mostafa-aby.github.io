@@ -64,10 +64,7 @@ const interests = [
   "Nonlinear Finite Element Analysis",
   "Constitutive Modeling of Materials",
   "Composite &amp; Damage Mechanics",
-  "Bayesian Optimization for Model Calibration",
   "Machine Learning for Materials Modeling",
-  "Multiscale &amp; Molecular Dynamics Simulation",
-  "Soil&ndash;Structure Interaction",
 ];
 
 /* Publications.

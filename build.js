@@ -132,7 +132,7 @@ function masthead(base) {
 
   return `
     <header class="masthead">
-      <img class="avatar" src="${base}${D.profile.image}" alt="${attr(D.profile.name)}" width="240" height="360">
+      <img class="avatar" src="${base}${D.profile.image}" alt="${attr(D.profile.name)}" width="280" height="420">
       <div class="identity">
         <h1>${D.profile.name}</h1>
         <div class="subtitle">${D.profile.title}${

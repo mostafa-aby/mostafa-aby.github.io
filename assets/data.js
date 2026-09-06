@@ -64,7 +64,7 @@ const interests = [
   "Nonlinear Finite Element Analysis",
   "Constitutive Modeling of Materials",
   "Composite &amp; Damage Mechanics",
-  "Bayesian Optimization &amp; Uncertainty Quantification",
+  "Bayesian Optimization for Model Calibration",
   "Machine Learning for Materials Modeling",
   "Multiscale &amp; Molecular Dynamics Simulation",
   "Soil&ndash;Structure Interaction",
@@ -424,8 +424,10 @@ const testScores = [
 ];
 
 const skills = [
-  { group: "Programming &amp; Tools", items: "Python, MATLAB, SQL, LaTeX, Typst, Git, Inkscape" },
-  { group: "Finite Element &amp; Simulation", items: "Abaqus, Ansys, PLAXIS 3D, LAMMPS, SAP2000, ETABS, AutoCAD" },
+  { group: "Programming", items: "Python, MATLAB, SQL, LaTeX, Typst, Git" },
+  { group: "Finite Element Packages", items: "Abaqus, Ansys Mechanical, PLAXIS 3D, SAP2000, ETABS" },
+  { group: "Computer-Aided Design", items: "SolidWorks, Ansys SpaceClaim, AutoCAD" },
+  { group: "Molecular Dynamics", items: "LAMMPS" },
   { group: "Machine Learning &amp; Data", items: "PyTorch, TensorFlow, Keras, Scikit-learn, Pandas, NumPy, SciPy, Bayesian Optimization" },
-  { group: "Methods", items: "Nonlinear FEA, Constitutive Modeling, Damage Mechanics, RVE / Micromechanics, Uncertainty Quantification, Materials Testing" },
+  { group: "Methods", items: "Nonlinear FEA, Constitutive Modeling, Damage Mechanics, Materials Testing" },
 ];

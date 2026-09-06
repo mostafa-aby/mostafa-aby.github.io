@@ -426,5 +426,7 @@ const skills = [
   { group: "Computer-Aided Design", items: "SolidWorks, Ansys SpaceClaim, AutoCAD" },
   { group: "Molecular Dynamics", items: "LAMMPS" },
   { group: "Machine Learning &amp; Data", items: "PyTorch, TensorFlow, Keras, Scikit-learn, Pandas, NumPy, SciPy, Bayesian Optimization" },
-  { group: "Methods", items: "Nonlinear FEA, Constitutive Modeling, Damage Mechanics, Materials Testing" },
+  // No "Methods" group: this section lists tools, and methods are what the
+  // Experience and Publications sections already show. Kept out of all three
+  // documents deliberately — see check-consistency.py.
 ];

@@ -15,13 +15,20 @@ const profile = {
   // word that tells a search engine (and a human) which one you are.
   affiliation: "University of Maryland",
   image: "assets/profile.jpg",
+  // The prior-institutions sentence is parked below, not deleted. Naming UConn
+  // and two master's degrees in the opening paragraph invites "why so many
+  // places?" before anyone has read a word about the research. The Education
+  // section further down still lists every one of them, in date order, where
+  // the context answers the question instead of raising it.
+  //
+  // To put it back, paste this at the end of `bio`:
+  //   Before Maryland I spent a year of doctoral research at the University of
+  //   Connecticut, and earned master's degrees at Dalhousie University and the
+  //   Sharif University of Technology.
   bio: `I am a PhD student in <strong>Civil Engineering</strong> at the
         <strong>University of Maryland, College Park</strong>, working with
         <a href="https://cee.umd.edu/clark/faculty/303/Yunfeng-Zhang" target="_blank" rel="noopener">Prof. Yunfeng Zhang</a>
-        in the Structural Engineering Laboratory. Before Maryland I spent a year
-        of doctoral research at the University of Connecticut, and earned
-        master's degrees at Dalhousie University and the Sharif University of
-        Technology.`,
+        in the Structural Engineering Laboratory.`,
   research: `My work is in <strong>computational solid mechanics</strong>: building
         constitutive models for composite, brittle and soft materials, running
         nonlinear finite element simulations of how they fail, and using

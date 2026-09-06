@@ -30,8 +30,9 @@ const profile = {
         <a href="https://cee.umd.edu/clark/faculty/303/Yunfeng-Zhang" target="_blank" rel="noopener">Prof. Yunfeng Zhang</a>
         in the Structural Engineering Laboratory.`,
   research: `My work is in <strong>computational solid mechanics</strong>: building
-        constitutive models for composite, brittle and soft materials, and running
-        nonlinear finite element simulations of how they fail. I apply
+        constitutive models for composite, brittle and soft materials, modeling
+        components in <strong>SolidWorks</strong>, and running nonlinear finite
+        element simulations of how they fail in Abaqus and Ansys. I apply
         <strong>machine learning</strong>, including deep neural networks, to
         predict material behavior from experimental and simulation data.`,
 };

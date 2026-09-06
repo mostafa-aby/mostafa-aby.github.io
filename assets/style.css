@@ -144,6 +144,16 @@ header.masthead .identity p {
 /* The masthead bullets take the same measure and the same leading as the prose
    above them. Tightening a list because "it is only bullets" is how the top of
    a page turns back into the wall the paragraph rule above just prevented. */
+/* A title belongs to what follows it. So: the full 1.75rem gap ABOVE, separating
+   it from the bio, and a small one BELOW, binding it to its own bullets. Equal
+   gaps on both sides would leave it floating between two blocks, claimed by
+   neither. The rule below removes the list's own top margin so this holds. */
+header.masthead .identity .lede-title {
+  margin: 1.75rem 0 .55rem;
+  font-weight: 600;
+}
+header.masthead .identity .lede-title + ul.lede-points { margin-top: 0; }
+
 header.masthead .identity ul.lede-points {
   max-width: 38rem;
   margin: 1.75rem 0;

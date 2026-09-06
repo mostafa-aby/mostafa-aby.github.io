@@ -141,6 +141,11 @@ function masthead(base) {
         <p>${D.profile.bio}</p>
         ${D.profile.research ? `<p>${D.profile.research}</p>` : ""}
         ${
+          (D.profile.researchPoints || []).length && D.profile.researchTitle
+            ? `<div class="lede-title">${D.profile.researchTitle}</div>`
+            : ""
+        }
+        ${
           (D.profile.researchPoints || []).length
             ? `<ul class="lede-points">${D.profile.researchPoints
                 .map((p) => `<li>${p}</li>`)

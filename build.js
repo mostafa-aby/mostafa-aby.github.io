@@ -140,6 +140,13 @@ function masthead(base) {
         }</div>
         <p>${D.profile.bio}</p>
         <p>${D.profile.research}</p>
+        ${
+          (D.profile.researchPoints || []).length
+            ? `<ul class="lede-points">${D.profile.researchPoints
+                .map((p) => `<li>${p}</li>`)
+                .join("")}</ul>`
+            : ""
+        }
         <div class="linkrow">${linkHtml}</div>
       </div>
     </header>`;

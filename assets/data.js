@@ -31,13 +31,16 @@ const profile = {
         in the Structural Engineering Laboratory.`,
   // Deliberately does NOT restate the Research Interests tags directly above it.
   // The tags name the fields; this says what is actually done, and with what.
-  // Short opening sentence on purpose — it is the one line a skimmer reads.
-  research: `I model how materials fail. I calibrate constitutive
-        models against real test data — composites, concrete, rock, soil —
-        build the geometry in SolidWorks, and take it through nonlinear finite
-        element analysis in Abaqus and Ansys. Where the physics is hard to
-        write down, I train neural networks on experimental and simulation
-        data instead.`,
+  // One short line, then three bullets. The sentence is what a skimmer reads;
+  // the bullets are what they scan. Keep each bullet to ONE line at the 36rem
+  // masthead measure — a bullet that wraps is a sentence wearing a dot, and the
+  // whole point of the list is that the eye can take each one in at a glance.
+  research: `I model how materials fail.`,
+  researchPoints: [
+    `Constitutive models calibrated against real test data — composites, concrete, rock, soil`,
+    `Geometry in SolidWorks, nonlinear finite element analysis in Abaqus and Ansys`,
+    `Neural networks trained on test and simulation data, where the physics is hard to write down`,
+  ],
 };
 
 const links = [

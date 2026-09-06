@@ -206,7 +206,7 @@ Sorts newest-first on its own.
 
 ## New CV or resume PDF
 
-Edit the `.typ` file, then from `CV and Resume`:
+Edit the `.typ` file, then from the folder above this one (`CV & Resume`):
 
 ```
 bash publish.sh

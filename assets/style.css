@@ -130,9 +130,14 @@ header.masthead .identity { flex: 1 1 300px; }
    The two paragraphs get roughly double the page's default gap, and a little
    extra leading: this is the block every visitor reads first, and air between
    the lines is what keeps it from reading as a wall. */
+/* RULE for every gap in this block: the space BETWEEN two blocks must beat the
+   space between lines INSIDE one, or the reader cannot tell where a block ends.
+   Line spacing here is 1.62 x 16px, about 26px, so block margins are 1.75rem
+   (28px). They were .85rem (14px) — half the line gap — and the masthead read as
+   one undifferentiated mass. Raise the line-height and these must follow. */
 header.masthead .identity p {
   max-width: 38rem;
-  margin: .85rem 0;
+  margin: 1.75rem 0;
   line-height: 1.62;
 }
 
@@ -141,11 +146,14 @@ header.masthead .identity p {
    a page turns back into the wall the paragraph rule above just prevented. */
 header.masthead .identity ul.lede-points {
   max-width: 38rem;
-  margin: .85rem 0;
+  margin: 1.75rem 0;
   padding-left: 1.15rem;
   line-height: 1.62;
 }
-header.masthead .identity ul.lede-points li { margin: .35rem 0; }
+/* Bullets sit closer to each other (.6rem) than the list does to its neighbours
+   (1.75rem). That difference is what makes them read as one group of three
+   rather than three loose lines. */
+header.masthead .identity ul.lede-points li { margin: .6rem 0; }
 
 header.masthead h1 {
   margin: 0 0 4px 0;

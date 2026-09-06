@@ -40,9 +40,9 @@ const profile = {
   // the work is without help.
   research: ``,
   researchPoints: [
-    `Constitutive models calibrated against real test data — composites, concrete, rock, soil`,
+    `Constitutive models for composites, concrete, rock, and soil, calibrated to experimental data`,
     `Geometry in SolidWorks, nonlinear finite element analysis in Abaqus and Ansys`,
-    `Neural networks trained on test and simulation data, where the physics is hard to write down`,
+    `Neural networks trained on simulation and experimental data to predict material behavior`,
   ],
 };
 

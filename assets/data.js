@@ -35,7 +35,10 @@ const profile = {
   // the bullets are what they scan. Keep each bullet to ONE line at the 36rem
   // masthead measure — a bullet that wraps is a sentence wearing a dot, and the
   // whole point of the list is that the eye can take each one in at a glance.
-  research: `I model how materials fail.`,
+  // No lead-in sentence. Anything general enough to introduce the bullets either
+  // restates the interest tags above or reads as a slogan; the bullets say what
+  // the work is without help.
+  research: ``,
   researchPoints: [
     `Constitutive models calibrated against real test data — composites, concrete, rock, soil`,
     `Geometry in SolidWorks, nonlinear finite element analysis in Abaqus and Ansys`,

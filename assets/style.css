@@ -52,19 +52,24 @@ body {
   transition: background-color .15s ease, color .15s ease;
 }
 
+/* The page column. 1040px, not the full window: on a 1800px monitor an
+   uncapped line of 17px text runs past 200 characters, and the eye loses its
+   place returning to the start of the next line. The margins are not waste,
+   they are what keeps the measure readable. 1040 is as wide as this layout
+   goes before the entry rows (role left, dates right) pull too far apart. */
 .container {
-  max-width: 780px;
+  max-width: 1040px;
   width: 100%;
   margin: 0 auto;
   padding: 2rem 1.5rem 4rem;
 }
 
-/* Reading measure. The 780px column is right for structure — publication
-   entries, news with its date gutter, roles with right-aligned dates. But
-   at 17px that column runs ~100 characters per line, and comfortable prose
-   is 65–75. So running text gets its own narrower measure while the page
-   keeps its width. */
-:root { --measure: 32rem; }   /* rem, so it is the same width everywhere */
+/* Reading measure. The page column is right for STRUCTURE — publication
+   entries, news with its date gutter, roles with right-aligned dates, all of
+   which want room. Running PROSE does not: at 17px the full column is ~120
+   characters and comfortable prose is 65–75. So prose gets its own narrower
+   measure while the page keeps its width. */
+:root { --measure: 34rem; }   /* rem, so it is the same width everywhere */
 
 .abstract p,
 .entry ul li,
@@ -100,8 +105,8 @@ header.masthead {
 }
 
 header.masthead img.avatar {
-  width: 240px;
-  height: 360px;         /* 2:3, the source photo's own ratio */
+  width: 280px;
+  height: 420px;         /* 2:3, the source photo's own ratio */
   object-fit: cover;
   object-position: 50% 22%;
   border-radius: 8px;
@@ -109,6 +114,11 @@ header.masthead img.avatar {
 }
 
 header.masthead .identity { flex: 1 1 300px; }
+
+/* The bio is prose and obeys the prose rule, a little wider than the body
+   measure because it sits beside the photo rather than under a heading. Left
+   uncapped it would run the ~87 characters the wider column allows. */
+header.masthead .identity p { max-width: 36rem; }
 
 header.masthead h1 {
   margin: 0 0 4px 0;

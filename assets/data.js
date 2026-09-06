@@ -389,9 +389,12 @@ const education = [
   { degree: "B.Sc. in Civil Engineering", school: "Iran University of Science and Technology", dates: "2010 – 2014", note: "" },
 ];
 
-const awards = [
-  "Natural Sciences and Engineering Research Council of Canada (NSERC) research grant, Dalhousie University (2017–2020)",
-];
+/* Honors and Awards. Emptied 2026-09-06 to match the CV: its single entry was
+   an NSERC grant to the lab, which is not a personal honour. An empty array
+   prints no heading at all, so the section simply is not there. The Dalhousie
+   education entry still records the funding, which is where it reads as fact
+   rather than as an accolade. */
+const awards = [];
 
 /* Grants and awards that funded the research itself, as opposed to personal
    honors. Empty prints nothing. */

@@ -29,12 +29,15 @@ const profile = {
         University of Maryland, College Park, working with
         Prof. Yunfeng Zhang
         in the Structural Engineering Laboratory.`,
-  research: `My work is in computational solid mechanics: building
-        constitutive models for composite, brittle and soft materials, modeling
-        components in SolidWorks, and performing nonlinear finite
-        element analysis in Abaqus and Ansys. I apply
-        machine learning, including deep neural networks, to
-        predict material behavior from experimental and simulation data.`,
+  // Deliberately does NOT restate the Research Interests tags directly above it.
+  // The tags name the fields; this says what is actually done, and with what.
+  // Short opening sentence on purpose — it is the one line a skimmer reads.
+  research: `I model how materials fail. I calibrate constitutive
+        models against real test data — composites, concrete, rock, soil —
+        build the geometry in SolidWorks, and take it through nonlinear finite
+        element analysis in Abaqus and Ansys. Where the physics is hard to
+        write down, I train neural networks on experimental and simulation
+        data instead.`,
 };
 
 const links = [

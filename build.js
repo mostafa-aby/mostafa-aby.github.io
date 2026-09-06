@@ -436,15 +436,19 @@ function collect(fn) {
    the papers answers that question before it forms — he published at Sharif, at
    Dalhousie, and since. Same facts, opposite reading.
 
-   Research Interests dropped below Experience because the masthead's research
-   paragraph already says the same thing about 100px higher up. */
+   Research Interests leads. Five short noun phrases are the fastest thing on the
+   page to read, and a skimmer who reads nothing else has still filed you
+   correctly. This only works because the masthead paragraph below was rewritten
+   NOT to restate the tags: the tags name the fields, the paragraph says what is
+   actually done and with which tools. If you ever edit one, check the other, or
+   the top of the page starts saying the same thing twice. */
 const homeSections = (base) =>
   collect((add) => {
+    add("interests", "Research Interests", interests(), "Interests");
     D.pubSections.forEach((g) => add(slugId(g.short), g.title, pubList(g.key, base), g.short));
     D.talkSections.forEach((g) => add(slugId(g.short), g.title, talkList(g.key), g.short));
     add("experience", "Experience", experience(false));
     add("teaching", "Teaching", teaching());
-    add("interests", "Research Interests", interests(), "Interests");
     add("education", "Education", education());
     add("funding", "Research Funding", list(D.funding), "Funding");
     add("mentoring", "Mentoring", mentoring());

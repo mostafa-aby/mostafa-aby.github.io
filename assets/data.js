@@ -25,15 +25,15 @@ const profile = {
   //   Before Maryland I spent a year of doctoral research at the University of
   //   Connecticut, and earned master's degrees at Dalhousie University and the
   //   Sharif University of Technology.
-  bio: `I am a PhD student in <strong>Civil Engineering</strong> at the
-        <strong>University of Maryland, College Park</strong>, working with
+  bio: `I am a PhD student in Civil Engineering at the
+        University of Maryland, College Park, working with
         <a href="https://cee.umd.edu/clark/faculty/303/Yunfeng-Zhang" target="_blank" rel="noopener">Prof. Yunfeng Zhang</a>
         in the Structural Engineering Laboratory.`,
-  research: `My work is in <strong>computational solid mechanics</strong>: building
+  research: `My work is in computational solid mechanics: building
         constitutive models for composite, brittle and soft materials, modeling
-        components in <strong>SolidWorks</strong>, and running nonlinear finite
+        components in SolidWorks, and running nonlinear finite
         element simulations of how they fail in Abaqus and Ansys. I apply
-        <strong>machine learning</strong>, including deep neural networks, to
+        machine learning, including deep neural networks, to
         predict material behavior from experimental and simulation data.`,
 };
 
@@ -330,9 +330,9 @@ const experience = [
     location: "Storrs, CT",
     dates: "Sep. 2024 – Dec. 2025",
     points: [
-      "Simulated the elastic–plastic response of randomized <strong>CFRP composite RVEs</strong> in Abaqus, resolving damage initiation and evolution.",
-      "Automated the FE workflow in <strong>Python</strong> — geometry, meshing, stochastic parameter randomization — so many configurations run as one batch.",
-      "Applied <strong>statistical sampling methods</strong> to the material randomization scheme, improving how well realizations span the property space.",
+      "Simulated the elastic–plastic response of randomized CFRP composite RVEs in Abaqus, resolving damage initiation and evolution.",
+      "Automated the FE workflow in Python — geometry, meshing, stochastic parameter randomization — so many configurations run as one batch.",
+      "Applied statistical sampling methods to the material randomization scheme, improving how well realizations span the property space.",
     ],
   },
   {
@@ -351,8 +351,8 @@ const experience = [
     location: "Halifax, NS, Canada",
     dates: "Sep. 2017 – May 2020",
     points: [
-      "Modeled the <strong>lateral behavior of concrete-filled FRP tube piles</strong> with a MATLAB nonlinear FE implementation, validated against full-scale field tests on a Virginia highway bridge.",
-      "Modeled axial FRP pile behavior in multi-layered soil in <strong>PLAXIS 3D</strong>, including the soil–FRP interface.",
+      "Modeled the lateral behavior of concrete-filled FRP tube piles with a MATLAB nonlinear FE implementation, validated against full-scale field tests on a Virginia highway bridge.",
+      "Modeled axial FRP pile behavior in multi-layered soil in PLAXIS 3D, including the soil–FRP interface.",
       "Ran uniaxial compression testing of tire-derived aggregate concrete specimens for bridge applications.",
     ],
   },
@@ -363,7 +363,7 @@ const experience = [
     dates: "Sep. 2014 – Jan. 2017",
     points: [
       "Investigated concrete behavior under uniaxial and triaxial compression across polymer, ordinary cement, lightweight, and lime-mortar materials.",
-      "Developed a <strong>disturbed state concept</strong> constitutive model for the softening and volumetric response of rock under triaxial loading.",
+      "Developed a disturbed state concept constitutive model for the softening and volumetric response of rock under triaxial loading.",
       "Contributed to peer review for journal submissions in materials engineering.",
     ],
   },

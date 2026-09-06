@@ -41,9 +41,12 @@ const profile = {
   // the work is without help.
   research: ``,
   researchPoints: [
-    `Constitutive modeling of metals, composites and granular materials`,
-    `Nonlinear finite element analysis in Abaqus and Ansys, geometry in SolidWorks`,
-    `Neural networks predicting material behavior from simulation and test data`,
+    // Label then specifics, the same construction as the Technical Skills block.
+    // The label carries the activity, so the text after the colon never repeats
+    // it — "Constitutive modeling: metals", not "Constitutive modeling of metals".
+    `<strong>Constitutive modeling:</strong> metals, composites and granular materials`,
+    `<strong>Nonlinear finite element analysis:</strong> Abaqus and Ansys, geometry in SolidWorks`,
+    `<strong>Deep learning:</strong> material behavior predicted from simulation and test data`,
   ],
 };
 

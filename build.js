@@ -139,7 +139,7 @@ function masthead(base) {
           D.profile.location ? ` <span class="sep">&middot;</span> ${D.profile.location}` : ""
         }</div>
         <p>${D.profile.bio}</p>
-        <p>${D.profile.research}</p>
+        ${D.profile.research ? `<p>${D.profile.research}</p>` : ""}
         ${
           (D.profile.researchPoints || []).length
             ? `<ul class="lede-points">${D.profile.researchPoints

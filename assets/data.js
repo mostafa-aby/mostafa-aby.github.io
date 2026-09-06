@@ -225,10 +225,10 @@ const talkSections = [
 /* News is for things that are not already listed elsewhere on the page, or that
    a reader would want dated. Sorts newest-first on its own. */
 const news = [
-  { date: "2026-01-01", text: `Started my PhD in <strong>Civil Engineering</strong> at the <strong>University of Maryland, College Park</strong>, with <strong>Prof. Yunfeng Zhang</strong>.` },
-  { date: "2024-09-01", text: `Began doctoral research at the <strong>University of Connecticut</strong> on composite constitutive modeling.` },
-  { date: "2020-08-01", text: `Paper on <em>concrete-filled FRP tube piles in sand</em> published in the <strong>ASCE International Journal of Geomechanics</strong>.` },
-  { date: "2018-08-01", text: `Paper on <em>softening behavior and volumetric deformation of rocks</em> published in the <strong>ASCE International Journal of Geomechanics</strong>.` },
+  { date: "2026-01-01", text: `Started my PhD in Civil Engineering at the University of Maryland, College Park, with Prof. Yunfeng Zhang.` },
+  { date: "2024-09-01", text: `Began doctoral research at the University of Connecticut on composite constitutive modeling.` },
+  { date: "2020-08-01", text: `Paper on concrete-filled FRP tube piles in sand published in the <em>ASCE International Journal of Geomechanics</em>.` },
+  { date: "2018-08-01", text: `Paper on softening behavior and volumetric deformation of rocks published in the <em>ASCE International Journal of Geomechanics</em>.` },
 ];
 
 /* ---- Selected research -------------------------------------------------

@@ -27,7 +27,7 @@ const profile = {
   //   Sharif University of Technology.
   bio: `I am a PhD student in Civil Engineering at the
         University of Maryland, College Park, working with
-        <a href="https://cee.umd.edu/clark/faculty/303/Yunfeng-Zhang" target="_blank" rel="noopener">Prof. Yunfeng Zhang</a>
+        Prof. Yunfeng Zhang
         in the Structural Engineering Laboratory.`,
   research: `My work is in computational solid mechanics: building
         constitutive models for composite, brittle and soft materials, modeling
@@ -382,7 +382,7 @@ const experience = [
 const teaching = [];
 
 const education = [
-  { degree: "Ph.D. in Civil Engineering", school: "University of Maryland, College Park", dates: "2026 – Present", note: `Advisor: <a href="https://cee.umd.edu/clark/faculty/303/Yunfeng-Zhang" target="_blank" rel="noopener">Prof. Yunfeng Zhang</a> · Structural Engineering Laboratory` },
+  { degree: "Ph.D. in Civil Engineering", school: "University of Maryland, College Park", dates: "2026 – Present", note: `Advisor: Prof. Yunfeng Zhang · Structural Engineering Laboratory` },
   { degree: "Ph.D. in Civil / Structural Engineering", school: "University of Connecticut", dates: "2024 – 2025", note: "GPA 4.0/4.0 · Constitutive modeling of composite and soft materials" },
   { degree: "M.A.Sc. in Civil Engineering", school: "Dalhousie University", dates: "2017 – 2020", note: "GPA 3.4/4.0 · Thesis: Numerical modeling of concrete-filled fiber-reinforced polymer piles" },
   { degree: "M.Sc. in Civil / Structural Engineering", school: "Sharif University of Technology", dates: "2014 – 2017", note: "Thesis: Constitutive modeling of brittle materials under triaxial compression" },

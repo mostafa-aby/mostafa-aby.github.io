@@ -31,8 +31,8 @@ const profile = {
         in the Structural Engineering Laboratory.`,
   research: `My work is in computational solid mechanics: building
         constitutive models for composite, brittle and soft materials, modeling
-        components in SolidWorks, and running nonlinear finite
-        element simulations of how they fail in Abaqus and Ansys. I apply
+        components in SolidWorks, and performing nonlinear finite
+        element analysis in Abaqus and Ansys. I apply
         machine learning, including deep neural networks, to
         predict material behavior from experimental and simulation data.`,
 };

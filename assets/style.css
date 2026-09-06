@@ -105,8 +105,8 @@ header.masthead {
 }
 
 header.masthead img.avatar {
-  width: 280px;
-  height: 420px;         /* 2:3, the source photo's own ratio */
+  width: 250px;
+  height: 375px;         /* 2:3, the source photo's own ratio */
   object-fit: cover;
   /* The source is composed at 2:3 and the box is 2:3, so cover shows the whole
      frame and centre is centre. The old 22% existed only to pull a badly
@@ -120,8 +120,15 @@ header.masthead .identity { flex: 1 1 300px; }
 
 /* The bio is prose and obeys the prose rule, a little wider than the body
    measure because it sits beside the photo rather than under a heading. Left
-   uncapped it would run the ~87 characters the wider column allows. */
-header.masthead .identity p { max-width: 36rem; }
+   uncapped it would run the ~87 characters the wider column allows.
+   The two paragraphs get roughly double the page's default gap, and a little
+   extra leading: this is the block every visitor reads first, and air between
+   the lines is what keeps it from reading as a wall. */
+header.masthead .identity p {
+  max-width: 36rem;
+  margin: .85rem 0;
+  line-height: 1.62;
+}
 
 header.masthead h1 {
   margin: 0 0 4px 0;

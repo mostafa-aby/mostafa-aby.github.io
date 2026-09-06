@@ -32,15 +32,16 @@ const profile = {
   // Deliberately does NOT restate the Research Interests tags directly above it.
   // The tags name the fields; this says what is actually done, and with what.
   // One short line, then three bullets. The sentence is what a skimmer reads;
-  // the bullets are what they scan. Keep each bullet to ONE line at the 36rem
-  // masthead measure — a bullet that wraps is a sentence wearing a dot, and the
-  // whole point of the list is that the eye can take each one in at a glance.
+  // the bullets are what they scan. Keep each bullet to ONE line at the 38rem
+  // masthead measure (~82 characters) — a bullet that wraps is a sentence
+  // wearing a dot, and the point of the list is that the eye takes each one in
+  // whole. If a bullet needs more, cut a word; do not widen the column again.
   // No lead-in sentence. Anything general enough to introduce the bullets either
   // restates the interest tags above or reads as a slogan; the bullets say what
   // the work is without help.
   research: ``,
   researchPoints: [
-    `Experimentally calibrated constitutive models — composites, concrete, rock, soil`,
+    `Experimentally calibrated constitutive models: composites, concrete, rock, soil`,
     `Nonlinear finite element analysis in Abaqus and Ansys, geometry in SolidWorks`,
     `Neural networks predicting material behavior from simulation and test data`,
   ],

@@ -148,9 +148,18 @@ header.masthead .identity p {
    it from the bio, and a small one BELOW, binding it to its own bullets. Equal
    gaps on both sides would leave it floating between two blocks, claimed by
    neither. The rule below removes the list's own top margin so this holds. */
+/* Deliberately NOT bold. The three bullets below open with bold labels, and a
+   bold heading over bold labels is four bold things with no hierarchy — the eye
+   cannot tell the header from its contents. So this is set apart by KIND, not
+   weight: muted, smaller, letter-spaced caps. If the labels ever lose their
+   bold, this can take it back. */
 header.masthead .identity .lede-title {
   margin: 1.75rem 0 .55rem;
-  font-weight: 600;
+  font-weight: 400;
+  font-size: .78rem;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  color: var(--muted);
 }
 header.masthead .identity .lede-title + ul.lede-points { margin-top: 0; }
 

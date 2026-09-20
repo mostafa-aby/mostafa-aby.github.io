@@ -351,7 +351,7 @@ const experience = [
     location: "College Park, MD",
     dates: "Jan. 2026 – Present",
     points: [
-      "Characterized the mechanical and failure behavior of bamboo scrimber, a sustainable composite material, and calibrated anisotropic failure models in ANSYS for structural simulation of exoskeleton and humanoid robotic links.",
+      "Characterized the mechanical and failure behavior of bamboo scrimber, a sustainable composite material, and calibrated anisotropic failure models in Ansys Mechanical for structural simulation of exoskeleton and humanoid robotic links.",
       "Reconstructed benchmark exoskeleton component geometry and evaluated bamboo scrimber against conventional aluminum alloys through comparative finite element structural analysis.",
       "Led a sponsored research project for the Maryland Department of Transportation on fatigue and failure of aluminum sign-post-clip connections, combining physical testing, 3D scanning, and finite element analysis to validate structural performance.",
     ],
